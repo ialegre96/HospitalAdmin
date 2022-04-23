@@ -3288,7 +3288,7 @@ INSERT INTO `users` (`id`, `department_id`, `first_name`, `last_name`, `email`, 
 7878454512', 1, NULL, 'B+', '
 1994-12-12
 ', '2022-04-13 23:06:36
-', NULL, NULL, 1, 'en', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '
+', NULL, NULL, 1, 'es', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '
 2022-04-13 23:06:36
 ', '2022-04-13 23:06:36
 ', '0');

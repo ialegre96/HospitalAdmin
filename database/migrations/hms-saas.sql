@@ -2861,7 +2861,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `department_id`, `first_name`, `last_name`, `email`, `password`, `designation`, `phone`, `gender`, `qualification`, `blood_group`, `dob`, `email_verified_at`, `owner_id`, `owner_type`, `status`, `language`, `username`, `hospital_name`, `tenant_id`, `remember_token`, `facebook_url`, `twitter_url`, `instagram_url`, `linkedIn_url`, `created_at`, `updated_at`) VALUES
-(1, 10, 'Super', 'Admin', 'admin@hms.com', '$2y$10$IC5s2ngxTVTrWUS6It17.O7gqlr/Eal8yFTsO2G7.RC5LNuXHTnUq', NULL, '7878454512', 1, NULL, 'B+', '1994-12-12', '2022-02-11 23:58:13', NULL, NULL, 1, 'en', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-02-11 23:58:13', '2022-02-11 23:58:13');
+(1, 10, 'Super', 'Admin', 'admin@hms.com', '$2y$10$IC5s2ngxTVTrWUS6It17.O7gqlr/Eal8yFTsO2G7.RC5LNuXHTnUq', NULL, '7878454512', 1, NULL, 'B+', '1994-12-12', '2022-02-11 23:58:13', NULL, NULL, 1, 'es', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-02-11 23:58:13', '2022-02-11 23:58:13');
 
 -- --------------------------------------------------------
 

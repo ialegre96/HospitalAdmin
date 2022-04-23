@@ -30,7 +30,7 @@ class CreateUsersTable extends Migration
             $table->integer('owner_id')->nullable();
             $table->string('owner_type')->nullable();
             $table->boolean('status');
-            $table->string('language')->default('en');
+            $table->string('language')->default('es');
 
             $table->string('username')->unique()->nullable();
             $table->string('hospital_name');
