@@ -61,7 +61,7 @@ function getAvatarUrl()
  */
 function getUserImageInitial($userId, $name)
 {
-    return getAvatarUrl()."?name=$name&size=100&rounded=true&color=fff&background=".getRandomColor($userId);
+    return getAvatarUrl() . "?name=$name&size=100&rounded=true&color=fff&background=" . getRandomColor($userId);
 }
 
 /**
@@ -185,7 +185,7 @@ function getAppName()
     static $appName;
 
     if (empty($appName)) {
-        $appName = Setting::where('key', '=', 'app_name')->first()->value;
+        $appName = Setting::where('key', '=', 'app_name')->first();
     }
 
     return $appName;
@@ -277,7 +277,6 @@ function getCurrenciesClass($currency = null)
             return 'fas fa-dollar-sign';
         default:
             return 'fas fa-dollar-sign';
-
     }
 }
 
@@ -360,16 +359,16 @@ function getCurrentCurrency()
 /**
  *
  */
-function totalAmount(){
+function totalAmount()
+{
     $totalSum = 0;
     $amount = Invoice::get();
 
-    foreach ($amount as $amounts){
+    foreach ($amount as $amounts) {
         $total = 0;
-        if($amounts['discount'] != 0){
+        if ($amounts['discount'] != 0) {
             $total += $amounts['amount'] - ($amounts['amount'] * $amounts['discount'] / 100);
-        }
-        else{
+        } else {
             $totalSum += $amounts['amount'];
         }
 
@@ -412,7 +411,7 @@ function formatCurrency($currencyValue)
         $currencySuffix = 'Cr';
     }
 
-    return $formattedAmount.' '.$currencySuffix;
+    return $formattedAmount . ' ' . $currencySuffix;
 }
 
 /**
@@ -433,18 +432,17 @@ function convertCurrency($amount)
         // Thousand
         $amount = $amount / 1000;
         $amount = round($amount, 2);
-        $currency = $amount." ".'K';
+        $currency = $amount . " " . 'K';
     } elseif ($length == 7) {
         // Millions
         $amount = $amount / 1000000;
         $amount = round($amount, 2);
-        $currency = $amount." ".'M';
-
+        $currency = $amount . " " . 'M';
     } elseif ($length == 8 || $length == 9) {
         // Crores
         $amount = $amount / 10000000;
         $amount = round($amount, 2);
-        $currency = $amount.' '.'Cr';
+        $currency = $amount . ' ' . 'Cr';
     } else {
         $currency = $amount;
     }
@@ -490,7 +488,7 @@ function divider($numberOfDigits)
  */
 function preparePhoneNumber($input, $key)
 {
-    return (!empty($input[$key])) ? '+'.$input['prefix_code'].$input[$key] : null;
+    return (!empty($input[$key])) ? '+' . $input['prefix_code'] . $input[$key] : null;
 }
 
 /**
@@ -510,11 +508,17 @@ function getDoctorDepartment($doctorDepartmentId)
  */
 function getPatientsList($userOwnerId)
 {
-    $patientCase = PatientCase::with('patient.user')->where('doctor_id', '=',
-        $userOwnerId)->where('status', '=', 1)->get()->pluck('patient.user_id', 'id');
+    $patientCase = PatientCase::with('patient.user')->where(
+        'doctor_id',
+        '=',
+        $userOwnerId
+    )->where('status', '=', 1)->get()->pluck('patient.user_id', 'id');
 
-    $patientAdmission = PatientAdmission::with('patient.user')->where('doctor_id', '=',
-        $userOwnerId)->where('status', '=', 1)->get()->pluck('patient.user_id', 'id');
+    $patientAdmission = PatientAdmission::with('patient.user')->where(
+        'doctor_id',
+        '=',
+        $userOwnerId
+    )->where('status', '=', 1)->get()->pluck('patient.user_id', 'id');
 
     $arrayMerge = array_merge($patientAdmission->toArray(), $patientCase->toArray());
     $patientIds = array_unique($arrayMerge);
@@ -532,7 +536,7 @@ function getPatientsList($userOwnerId)
  */
 function getCurrencies()
 {
-    $currencyPath = file_get_contents(storage_path().'/currencies/defaultCurrency.json');
+    $currencyPath = file_get_contents(storage_path() . '/currencies/defaultCurrency.json');
     $currenciesData = json_decode($currencyPath, true);
     $currencies = [];
 
@@ -552,11 +556,13 @@ function getCurrencies()
  */
 function getCurrencySymbol()
 {
-    $currencyPath = file_get_contents(storage_path().'/currencies/defaultCurrency.json');
+    $currencyPath = file_get_contents(storage_path() . '/currencies/defaultCurrency.json');
     $currenciesData = json_decode($currencyPath, true)['currencies'];
 
-    $currencySymbol = collect($currenciesData)->where('code',
-        strtoupper(getCurrentCurrency()))->pluck('symbol')->first();
+    $currencySymbol = collect($currenciesData)->where(
+        'code',
+        strtoupper(getCurrentCurrency())
+    )->pluck('symbol')->first();
 
     return $currencySymbol;
 }
@@ -606,9 +612,9 @@ function getFileName($fileName, $attachment)
 {
     $fileNameExtension = $attachment->getClientOriginalExtension();
 
-    $newName = $fileName.'-'.time();
+    $newName = $fileName . '-' . time();
 
-    return $newName.'.'.$fileNameExtension;
+    return $newName . '.' . $fileNameExtension;
 }
 
 /**
@@ -635,8 +641,10 @@ function addNotification($data)
  */
 function getNotification($role)
 {
-    return Notification::whereUserId(Auth::id())->whereNotificationFor(Notification::NOTIFICATION_FOR[$role])->where('read_at',
-        null)->orderByDesc('created_at')->toBase()->get();
+    return Notification::whereUserId(Auth::id())->whereNotificationFor(Notification::NOTIFICATION_FOR[$role])->where(
+        'read_at',
+        null
+    )->orderByDesc('created_at')->toBase()->get();
 }
 
 /**
@@ -728,7 +736,7 @@ function checkLanguageSession()
 }
 
 /**
- * 
+ *
  */
 function headerLanguageName()
 {
@@ -771,9 +779,11 @@ function checkVaccinatePatientValidation($input, $vaccinatedPatient = null, $isC
     }
 
     foreach ($patients as $patient) {
-        if ($input['patient_id'] == $patient->patient_id &&
+        if (
+            $input['patient_id'] == $patient->patient_id &&
             $input['vaccination_id'] == $patient->vaccination_id &&
-            $input['dose_number'] == $patient->dose_number) {
+            $input['dose_number'] == $patient->dose_number
+        ) {
             $returnValue = true;
             break;
         }
@@ -860,10 +870,12 @@ function getSchedulesTimingSlot()
  */
 function getSubscriptionPlanCurrencyIcon($key): string
 {
-    $currencyPath = file_get_contents(storage_path().'/currencies/defaultCurrency.json');
+    $currencyPath = file_get_contents(storage_path() . '/currencies/defaultCurrency.json');
     $currenciesData = json_decode($currencyPath, true)['currencies'];
-    $currency = collect($currenciesData)->firstWhere('code',
-        strtoupper($key));
+    $currency = collect($currenciesData)->firstWhere(
+        'code',
+        strtoupper($key)
+    );
 
     return $currency['symbol'];
 }
@@ -874,10 +886,12 @@ function getSubscriptionPlanCurrencyIcon($key): string
  */
 function getSubscriptionPlanCurrencyCode($key): string
 {
-    $currencyPath = file_get_contents(storage_path().'/currencies/defaultCurrency.json');
+    $currencyPath = file_get_contents(storage_path() . '/currencies/defaultCurrency.json');
     $currenciesData = json_decode($currencyPath, true)['currencies'];
-    $currency = collect($currenciesData)->firstWhere('code',
-        strtoupper($key));
+    $currency = collect($currenciesData)->firstWhere(
+        'code',
+        strtoupper($key)
+    );
 
     return $currency['code'];
 }
@@ -897,13 +911,13 @@ function zeroDecimalCurrencies()
  */
 function getCurrencyFullName(): array
 {
-    $currencyPath = file_get_contents(storage_path().'/currencies/defaultCurrency.json');
+    $currencyPath = file_get_contents(storage_path() . '/currencies/defaultCurrency.json');
     $currenciesData = json_decode($currencyPath, true);
     $currencies = [];
 
     foreach ($currenciesData['currencies'] as $currency) {
         $convertCode = strtolower($currency['code']);
-        $currencies[$convertCode] = $currency['symbol'].' - '.$currency['code'].' '.$currency['name'];
+        $currencies[$convertCode] = $currency['symbol'] . ' - ' . $currency['code'] . ' ' . $currency['name'];
     }
 
     return $currencies;
@@ -1016,7 +1030,7 @@ function isFeatureAllowToUse($routeName)
  */
 function getCurrentActiveSubscriptionPlan()
 {
-    if (!Auth::user()){
+    if (!Auth::user()) {
         return null;
     }
     return Subscription::where('status', Subscription::ACTIVE)
@@ -1048,7 +1062,7 @@ function isAuth()
  */
 function currentActiveSubscription()
 {
-    if (!Auth::user()){
+    if (!Auth::user()) {
         return null;
     }
     return Subscription::with('subscriptionPlan')
@@ -1116,7 +1130,7 @@ function getProratedPlanData($planIDChosenByUser)
 
         return [
             'startDate'          => $startsAt,
-            'name'             => $subscriptionPlan->name.' / '.$frequency,
+            'name'             => $subscriptionPlan->name . ' / ' . $frequency,
             'trialDays'        => $subscriptionPlan->trial_days,
             'remainingBalance' => $remainingBalance,
             'endDate'          => $endsAt->format('jS M, Y'),
@@ -1129,7 +1143,7 @@ function getProratedPlanData($planIDChosenByUser)
 
 
     return [
-        'name'             => $subscriptionPlan->name.' / '.$frequency,
+        'name'             => $subscriptionPlan->name . ' / ' . $frequency,
         'trialDays'        => $subscriptionPlan->trial_days,
         'startDate'        => $startsAt,
         'endDate'          => $endsAt->format('jS M, Y'),
@@ -1175,7 +1189,7 @@ function getCurrentPlanDetails()
     }
 
     return [
-        'name'             => $currentPlan->name.' / '.$frequency,
+        'name'             => $currentPlan->name . ' / ' . $frequency,
         'trialDays'        => $currentPlan->trial_days,
         'startAt'          => Carbon::parse($currentSubscription->starts_at)->format('jS M, Y'),
         'endsAt'           => Carbon::parse($currentSubscription->ends_at)->format('jS M, Y'),
@@ -1197,12 +1211,11 @@ function getCurrentPlanDetails()
 function checkIfPlanIsInTrial($currentSubscription)
 {
     $now = Carbon::now();
-    if (! empty($currentSubscription->trial_ends_at) && $currentSubscription->trial_ends_at > $now) {
+    if (!empty($currentSubscription->trial_ends_at) && $currentSubscription->trial_ends_at > $now) {
         return true;
     }
 
     return false;
-
 }
 
 /**
@@ -1255,7 +1268,7 @@ function getMenuLinks($menu)
         $defaultRoute = route('incomes.index');
         $subMenus = ['Income', 'Expense'];
     }
-//    Front Office
+    //    Front Office
     if ($menu == User::MAIN_FRONT_OFFICE) {
         $defaultRoute = route('call_logs.index');
         $subMenus = ['Call Logs', 'Visitors', 'Postal', 'Receive', 'Postal', 'Dispatch'];
@@ -1316,7 +1329,7 @@ function getMenuLinks($menu)
         $defaultRoute = route('bed-assigns.index');
         $subMenus = ['Bed Assigns'];
     }
-//    document doctore
+    //    document doctore
     if ($menu == User::MAIN_DOCTOR_PATIENT_CASE) {
         $defaultRoute = route('patients.index');
         $subMenus = ['Patient Admissions'];
@@ -1363,8 +1376,10 @@ function getSettingForReCaptcha($userName)
     if (!$user) {
         $user = DB::table('users')->where('userName', $userName)->first();
     }
-    $isEnabledGoogleCapcha = Setting::where('key', 'enable_google_recaptcha')->where('tenant_id',
-        $user->tenant_id)->value('value');
+    $isEnabledGoogleCapcha = Setting::where('key', 'enable_google_recaptcha')->where(
+        'tenant_id',
+        $user->tenant_id
+    )->value('value');
 
     return $isEnabledGoogleCapcha;
 }
