@@ -1,0 +1,12 @@
+<svg class="icon-vivus weather feather-sliders" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+     viewBox="0 0 24 24" fill="none" stroke="#7603f3" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4,21L4,14" style="stroke-dasharray: 7, 9; stroke-dashoffset: 0;"></path>
+    <path d="M4,10L4,3" style="stroke-dasharray: 7, 9; stroke-dashoffset: 0;"></path>
+    <path d="M12,21L12,12" style="stroke-dasharray: 9, 11; stroke-dashoffset: 0;"></path>
+    <path d="M12,8L12,3" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+    <path d="M20,21L20,16" style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+    <path d="M20,12L20,3" style="stroke-dasharray: 9, 11; stroke-dashoffset: 0;"></path>
+    <path d="M1,14L7,14" style="stroke-dasharray: 6, 8; stroke-dashoffset: 0;"></path>
+    <path d="M9,8L15,8" style="stroke-dasharray: 6, 8; stroke-dashoffset: 0;"></path>
+    <path d="M17,16L23,16" style="stroke-dasharray: 6, 8; stroke-dashoffset: 0;"></path>
+</svg>

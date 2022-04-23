@@ -1,0 +1,395 @@
+body.dark-mode {
+    .form-select.form-select-solid {
+        background-color: #1b1b29;
+    }
+    
+    .select2-container--bootstrap5.select2-container--focus .form-select:not(.form-select-solid):not(.form-select-transparent), .select2-container--bootstrap5.select2-container--open .form-select:not(.form-select-solid):not(.form-select-transparent) {
+        border-color: #474761;
+    }
+    .select2-container--bootstrap5 .select2-dropdown .select2-search .select2-search__field {
+        background-color: #1e1e2d;
+        padding: 0.55rem 0.75rem;
+        color: #92929f;
+        font-size: .925rem;
+        border: 1px solid #323248;
+        border-radius: 0.475rem;
+        outline: 0 !important;
+    }
+    
+    .select2-container--bootstrap5 .select2-dropdown .select2-results__option.select2-results__option--highlighted {
+        background-color: #212e48;
+        color: #3699ff;
+    }
+
+    .select2-container--bootstrap5 .select2-dropdown {
+        background-color: #1e1e2d;
+        box-shadow: 0 0 30px rgb(0 0 0 / 30%);
+    }
+    
+    div.dataTables_wrapper div.dataTables_processing {
+        background-color: #1b1b29;
+    }
+    
+    .iti__country-list {
+        color: #999;
+        background-color: #1E1E2D !important;
+
+        li {
+            &:hover {
+                background-color: #212E48 !important;
+                color: #009ef7;
+
+
+                .iti__dial-code{
+                    color: #009ef7;
+                }
+            }
+        }
+    }
+
+    .page-item.next .page-link,
+    .page-item.previous .page-link {
+        background-color: #1E1E2D !important;
+
+
+        &:hover {
+            background-color: #212E48 !important;
+        }
+    }
+    
+    .fc-button.fc-button-active {
+        background-color: #2b2b40 !important;
+        color: #FFFFFF !important;
+    }
+    
+    .fc-toolbar-chunk{
+        button {
+            background-color: #1b1b29;
+
+
+            &:hover{
+                background-color: #1b1b29;
+                color: #FFFFFF !important;
+            }
+        }
+        .fc-prev-button , .fc-next-button{
+            span {
+                &:hover {
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+    }
+    
+    .swal2-popup{
+        background-color: #1E1E2D;
+
+
+        .swal2-title{
+            color: #92929F;
+        }
+        
+        .swal2-html-container{
+            color: #6D6D80;
+        }
+
+        .swal2-cancel{
+            background-color: #3699FF;
+            color: #FFFFFF;
+
+
+            &:hover{
+                background-color: #187DE4;
+            }
+        }
+    }
+
+    .fc-day-today {
+        background-color: #3699ff !important;
+    }
+    
+    .fc-daygrid-day-number {
+        color: #FFFFFF !important;
+    }
+    
+    .fc-daygrid-bg-harness{
+        background-color: #3699ff !important;
+    }
+    
+    .flatpickr-innerContainer {
+        display: block;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        background: #1e1e2c;
+    }
+    
+    .flatpickr-months {
+        padding: 0.5rem 1rem 0;
+        background-color: #1e1e2c;
+    }
+    
+    .flatpickr-current-month .flatpickr-monthDropdown-months {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-color: #1e1e2c;
+        border: 0!important;
+        border-radius: 0.475rem;
+        color: #5e6278;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-right: 0.5rem;
+        outline: none!important;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .flatpickr-current-month .flatpickr-monthDropdown-months:hover {
+        background: #1b1b29;
+    }
+    .flatpickr-months .flatpickr-next-month:hover, .flatpickr-months .flatpickr-prev-month:hover {
+        background: #1b1b29;
+    }
+
+    .dayContainer {
+        .flatpickr-day {
+            &.today {
+                background-color: #212e48;
+                color: #b5b5c3;
+
+                &.selected {
+                    background-color: #009ef7;
+                    color: #fff;
+                }
+            }
+        }
+        span {
+            &:hover {
+                background-color: #212e48;
+            }
+        }
+    }
+
+        .flatpickr-time{
+        background-color: #1e1e2c;
+    }
+
+    .form-control[readonly]{
+        color: #92929F;
+    }
+
+    .flatpickr-calendar.hasTime .flatpickr-time{
+        border-color: #565674;
+    }
+
+    .select2-selection__choice{
+        background-color: #3699ff !important;
+        color: #FFFFFF !important;
+    }
+
+    .d-flex .flex-column{
+        .text-black{
+            color: #cdcdde !important;
+        }
+    }
+
+    a {
+        .card-7
+        {
+            background-color: #52297A !important;
+            border-radius: 4px;
+
+            .text-inverse-dark
+            {
+                color: #FFFFFF !important;
+            }
+
+            &:hover
+            {
+                background-color: #47246B !important;
+            }
+        }
+    }
+    
+    .bed-status-popup{
+        background-color: #1e1e2d;
+        border-color: #565674 !important;
+    }
+
+    .alert-success {
+        background-color: #50cd89;
+    }
+    
+    .alert-danger{
+        background-color: #f1416c;
+    }
+    
+    .svg-icon.svg-icon-success svg [fill]:not(.permanent):not(g) {
+        fill: #fff !important;
+    }
+
+    .svg-icon.svg-icon-danger svg [fill]:not(.permanent):not(g) {
+        fill: #fff !important;
+    }
+
+    .aside-dark .menu .menu-item .menu-link.active .menu-title{
+        color: #FFFFFF !important;
+    }
+
+    #termConditionId, #privacyPolicyId{
+        .ql-editor{
+            p{
+                color: #9899ac;
+            }
+        }
+    }
+    
+    .daterangepicker .ranges ul {
+        background-color:#1e1e2d;
+        padding: 1rem 0;
+        width: 175px;
+    }
+    
+    .daterangepicker .ranges li:hover {
+        background-color: #212e48;
+        color: #3699ff;
+        transition: color .2s ease,background-color .2s ease;
+    }
+    
+    .daterangepicker .ranges {
+        background-color: #1e1e2d;
+        border-top-left-radius: 0.475rem;
+    }
+    
+    .daterangepicker {
+        background-color: #1e1e2d;
+        border: 0;
+        border-radius: 0.475rem;
+        box-shadow: 0 0 50px 0 rgb(82 63 105 / 10%);
+        font-family: Poppins,Helvetica,"sans-serif";
+        margin: 0;
+        padding: 0;
+        width: auto;
+        z-index: 1000;
+    }
+    
+    .daterangepicker .calendar-table table {
+        width: 100%;
+        margin: 0;
+        border-spacing: 0;
+        border-collapse: collapse;
+        background-color: #1e1e2d;
+    }
+    
+    .daterangepicker .drp-buttons {
+        border-top: 1px solid  #1e1e2d;
+        padding: 1rem 1.75rem;
+    }
+    
+    .daterangepicker.show-ranges.show-calendar .ranges {
+        border-right: 1px solid #1e1e2d;
+    }
+    
+    .daterangepicker .drp-calendar.left .calendar-table {
+        background: #1e1e2d;
+        padding-right: 8px;
+    }
+    
+    .daterangepicker .drp-calendar td.in-range.available:not(.active):not(.off):not(.today), .daterangepicker .drp-calendar td:hover {
+        background-color: #213f7a;
+        color: #1569bf;
+    }
+    
+    .daterangepicker .drp-calendar td.today, .daterangepicker .drp-calendar td.today.active {
+        background: #212e48 !important;
+        border-radius: 0.475rem;
+        color: #2383b9!important;
+    }
+    
+    .btn-check:active+.daterangepicker .drp-buttons .cancelBtn, .btn-check:checked+.daterangepicker .drp-buttons .cancelBtn, .daterangepicker .drp-buttons .cancelBtn.active, .daterangepicker .drp-buttons .cancelBtn.show, .daterangepicker .drp-buttons .cancelBtn:active:not(.btn-active), .daterangepicker .drp-buttons .cancelBtn:focus:not(.btn-active), .daterangepicker .drp-buttons .cancelBtn:hover:not(.btn-active), .show>.daterangepicker .drp-buttons .cancelBtn {
+        color: #cdcdde;
+        border-color: #474761;
+        background-color: #474761!important;
+    }
+    
+    .daterangepicker .drp-buttons .cancelBtn {
+        color: #cdcdde;
+        border-color: #323248;
+        background-color: #323248;
+    }
+    
+    .daterangepicker select.ampmselect, .daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker    select.monthselect, .daterangepicker select.yearselect {
+        background: transparent;
+        border-color: transparent;
+        border-radius: 0.475rem;
+        color: white;
+        font-weight: 500;
+        outline: 0!important;
+        padding-bottom: 0.35rem;
+        padding-top: 0.35rem;
+    }
+
+    .menu-item {
+        &.show {
+            .menu-link {
+                .menu-title {
+                    color: #3699ff !important;
+                }
+            }
+        }
+        
+        .menu-link {
+            &:hover {
+                .menu-title {
+                    color: #3699ff !important;
+                }
+            }
+            
+            .menu-title {
+                color: #92929f !important;
+            }
+        }
+    } 
+
+    .header {
+        .header-menu {
+            .menu {
+                &>.menu-item {
+                    &.show {
+                        &>.menu-link {
+                            background-color: rgba(27, 27, 41, 0.8) !important;        
+                        }
+                    }
+                    
+                    .menu-link {
+                        background-color: transparent !important;
+                        
+                        &:hover {
+                            background-color: rgba(27, 27, 41, 0.8) !important;    
+                        }
+                    }
+                }
+            }
+        }  
+    }
+
+    .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active), .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active){
+        background-color: #212e48 !important;
+    }
+
+    .timeline-item {
+        p {
+            color: #f6f6f6;
+        }
+    }
+
+    .no-bed-available {
+        span {
+            color: #d9d9d9;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<svg class="icon-vivus bd-color-1 feather feather-layout" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+     viewBox="0 0 24 24" fill="none" stroke="#7603f3" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <path width="18" height="18"
+          d="M 5,3 L 19,3 A 2,2,0,0,1,21,5 L 21,19 A 2,2,0,0,1,19,21 L 5,21 A 2,2,0,0,1,3,19 L 3,5 A 2,2,0,0,1,5,3"
+          style="stroke-dasharray: 69, 71; stroke-dashoffset: 0;"></path>
+    <path d="M3,9L21,9" style="stroke-dasharray: 18, 20; stroke-dashoffset: 0;"></path>
+    <path d="M9,21L9,9" style="stroke-dasharray: 12, 14; stroke-dashoffset: 0;"></path>
+</svg>

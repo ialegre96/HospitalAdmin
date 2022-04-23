@@ -1,0 +1,19 @@
+.hospital-preview {
+    margin-right: auto !important;
+    margin-left: unset !important;
+    padding-left: 30px;
+}
+
+.select2-container {
+    direction: ltr;
+    right: 0;
+
+    .select2-selection--single {
+        height: auto !important;
+    }
+}
+
+.iti__country-list {
+    direction: ltr;
+    left: 0;
+}

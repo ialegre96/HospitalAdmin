@@ -1,0 +1,46 @@
+@import "variables";
+
+.table {
+  &__item-desc {
+    width: 40%;
+  }
+
+  &__qty {
+    width: 15%;
+  }
+
+  &__item-no {
+    width: 3%;
+  }
+
+  &__add-btn-heading {
+    width: 45px;
+  }
+
+  .delete-bill-item {
+    cursor: pointer;
+  }
+}
+
+.table>tfoot>tr {
+  border-bottom: hidden;
+}
+.table-bordered {
+  tfoot {
+    td {
+      border: 1px solid transparent;
+      text-align: right;
+      padding: 3px;
+    }
+
+    .total-words {
+      width: 30%;
+    }
+  }
+}
+
+.form-buttons {
+  text-align: right;
+  clear: both;
+  padding: 10px 0px;
+}

@@ -1,0 +1,307 @@
+#pricing {
+    .nav-link {
+        background-color: white !important;
+        color: #495057 !important;
+
+        &.active {
+            background-color: #7603f3 !important;
+            color: white !important;
+        }
+
+        &:hover {
+            color: white !important;
+        }
+    }
+
+    .current-active-btn {
+        background-color: #198754 !important;
+        color: white !important;
+    }
+
+    .renew-free-plan {
+        background-color: #7603f3 !important;
+        color: white !important;
+    }
+}
+
+.home-section-two-img {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: contain !important;
+}
+
+.header-sm-call {
+    @media (max-width: 575px) {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+}
+
+.navbar-collapse {
+    @media (max-width: 991px) {
+        top: 100px;
+    }
+}
+
+.right-sm-nav {
+    @media (max-width: 575px) {
+        margin-left: auto;
+        margin-right: 20px;
+        position: unset;
+        width: unset;
+        justify-content: unset;
+    }
+}
+
+.featured-item.style-3 {
+    height: 100%;
+}
+
+.work-process .arrow {
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.section-container {
+    @media (max-width: 1200px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 575px) {
+        padding: 0 0 40px 0;
+    }
+}
+
+#about {
+    @media (max-width: 1200px) {
+        padding: 40px 0 60px !important;
+    }
+}
+
+#services {
+    @media (max-width: 991px) {
+        padding: 40px 0 !important;
+    }
+}
+
+#pricing {
+    @media (max-width: 1200px) {
+        padding: 40px 0 !important;
+    }
+}
+
+.btn-fit-content {
+    @media (max-width: 1200px) {
+        width: fit-content;
+    }
+}
+
+.featured-item {
+    @media (max-width: 991px) {
+        padding: 10px 15px;
+    }
+}
+
+.counter {
+    @media (max-width: 767px) {
+        padding: 10px;
+    }
+}
+
+.navbar-toggler {
+    .menu-line {
+        transition: all 0.3s ease;
+        display: block;
+    }
+
+    .line-one, .line-two {
+        width: 80%;
+        height: 2px;
+        background-color: #7603f3;
+        transition: all 0.3s ease;
+        display: none;
+    }
+}
+
+.navbar-toggler[aria-expanded=true] {
+    .menu-line {
+        transition: all 0.3s ease;
+        display: none;
+    }
+
+    .line-one, .line-two {
+        display: block;
+    }
+
+    .line-one {
+        top: 4px;
+        position: relative;
+        transform: rotate(45deg) scale(1);
+    }
+
+    .line-two {
+        bottom: 3px;
+        position: relative;
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.make-cursor-default {
+    cursor: default !important;
+}
+
+.proration-days-badge {
+    width: 5em !important;
+    border-radius: 4px !important;
+    padding: 3px !important;
+}
+
+.ribbon {
+    position: relative;
+    background: #ffffff !important;
+    border: 0.1px solid #7603f3 !important;
+}
+
+.ribbon.ribbon-end .ribbon-label {
+    border-top-left-radius: 0.475rem;
+    border-bottom-left-radius: 0.475rem;
+}
+
+.ribbon .ribbon-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    background-color: #009ef7;
+    box-shadow: 0 -1px 5px 0 rgb(0 0 0 / 10%);
+    color: #fff;
+    top: 50%;
+    right: 0;
+    transform: translateX(5px) translateY(-50%);
+}
+
+// subscription plans purchase css
+.plan-border-bottom {
+    border-bottom: 1px dashed #eff2f5;
+}
+
+.plan-card-shadow {
+    box-shadow: 0 0 20px 0 rgb(76 87 125 / 5%);
+}
+
+.plan-data {
+    width: 60%;
+
+    @media (max-width: 767px) {
+        width: 50%;
+    }
+}
+
+.plan-controls {
+    @media (max-width: 375px) {
+        display: initial !important;
+        & > div:first-child {
+            width: 100% !important;
+        }
+    }
+}
+
+.pagination {
+    display: flex !important;
+
+    .page-item {
+        .page-link.next {
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f054";
+            }
+        }
+
+        .page-link.prev {
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f053";
+            }
+        }
+    }
+}
+#ourHospital {
+    .featured-item {
+        .featured-title, .featured-desc {
+            text-align: center;
+        }
+        
+        &.style-3 {
+            padding: 40px 20px !important;
+
+            .featured-icon {
+                position: unset !important;
+                margin-bottom: 20px;
+
+                img {
+                    margin: 0 auto;
+                    display: block;
+                    border-radius: 50%;
+                }
+            }
+        }
+    } 
+}
+
+.language-dropdown {
+    &:hover {
+        .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            margin-top: 0;
+        }
+    }
+    .dropdown-menu {
+        border: none;
+        top: 70px;
+        z-index: 99;
+        opacity: 0;
+        width: 250px;
+        display: block;
+        border-radius: 8px;
+        padding: 10px 0;
+        margin-top: 15px;
+        position: absolute;
+        visibility: hidden;
+        background: #fff;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+
+
+        li a {
+            padding: 10px 20px;
+            position: relative;
+            display: block;
+            color: #07003b;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            
+            &:hover {
+                color: #7603f3;
+            }
+
+            .country-flag {
+                width: 20px;
+            }
+        }
+    }
+}
+    

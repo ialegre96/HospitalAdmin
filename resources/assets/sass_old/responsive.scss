@@ -1,0 +1,161 @@
+@media only screen and (min-width: 1024px) {
+    .navbar-brand-full {
+        margin-left: 10px;
+    }
+    .chart-responsive {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .md-overflow-auto {
+        overflow: auto !important;
+    }
+    .time_range {
+        float: none !important;
+    }
+    .d-table-con {
+        display: table !important;
+    }
+    .w-sm-50 {
+        width: 50% !important;
+    }
+    .filter-container {
+        justify-content: flex-end;
+    }
+    .page-header .btn-group {
+        display: grid;
+        justify-content: end;
+    }
+    .flex-end-sm {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .chart-responsive {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .d-table-con {
+        display: block !important;
+    }
+    .fc-toolbar .fc-left, .fc-toolbar .fc-center, .fc-toolbar .fc-right {
+        display: flex !important;
+        justify-content: center;
+        float: none !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .investigation-report-date .bootstrap-datetimepicker-widget.dropdown-menu {
+        margin: -40px 0;
+    }
+    .disease-name {
+        min-width: 40vh !important;
+    }
+    .disease-charge, .price {
+        min-width: 20vh !important;
+    }
+    .qty {
+        min-width: 15vh !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .bed-type-name {
+        font-size: 9pt;
+        letter-spacing: 0px;
+    }
+    .px-xs-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .date-container .bootstrap-datetimepicker-widget.dropdown-menu {
+        margin: -60px 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .font-sm {
+        font-size: 8pt !important;
+    }
+    .dataTables_paginate {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 329px) {
+    .time_range {
+        padding: 6px 5px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .dataTables_paginate {
+        font-size: small;
+    }
+    .font-xs-sm {
+        font-size: 8pt !important;
+    }
+    .w-xs-75 {
+        width: 75% !important;
+    }
+    .btnIpdPatient {
+        width: 10em !important;
+    }
+    .availableFrom + .bootstrap-datetimepicker-widget.dropdown-menu {
+        width: 235px !important;
+    }
+    .availableTo + .bootstrap-datetimepicker-widget.dropdown-menu {
+        width: 235px !important;
+    }
+    .addAccountModal {
+        padding: 3.1px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .categoryId + .select2-container {
+        min-width: 30vh;
+    }
+    .medicineId + .select2-container {
+        min-width: 35vh;
+    }
+    .dosage {
+        min-width: 20vh;
+    }
+    .instruction {
+        min-width: 50vh;
+    }
+    .ipdConsultantCon {
+        overflow-x: scroll;
+    }
+    .settingThumbnailPreview {
+        width: 90px !important;
+    }
+    .iti__country-list {
+        white-space: normal;
+    }
+    .bedBtn {
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .availableOn, .availableFrom, .availableTo {
+        min-width: 20vh;
+    }
+    .schedulesCon {
+        overflow-x: scroll !important;
+        margin-bottom: 1em;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .iti-mobile .iti--container {
+        top: 56px !important;
+        bottom: 56px !important;
+    }
+}

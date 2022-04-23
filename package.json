@@ -1,0 +1,44 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/plugin-transform-strict-mode": "^7.14.5",
+        "jquery": "^3.6.0",
+        "laravel-mix": "^6.0.12",
+        "lodash": "^4.17.19",
+        "postcss": "^8.2.1",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "1.32.13",
+        "sass-loader": "^8.0.2"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.1",
+        "@popperjs/core": "^2.9.2",
+        "aos": "^2.3.4",
+        "bootstrap": "5.0.2",
+        "bootstrap-daterangepicker": "^3.1.0",
+        "chart.js": "^3.2.1",
+        "datatables.net": "^1.11.3",
+        "datatables.net-bs4": "^1.11.3",
+        "flatpickr": "^4.6.9",
+        "font-awesome": "^4.7.0",
+        "fullcalendar": "^5.8.0",
+        "html5-qrcode": "^2.0.11",
+        "intl-tel-input": "^17.0.13",
+        "jquery-toast-plugin": "^1.3.2",
+        "jsrender": "^1.0.5",
+        "lightgallery": "^2.2.1",
+        "moment": "^2.29.1",
+        "owl.carousel": "^2.3.4",
+        "select2": "^4.1.0-rc.0",
+        "smooth-scroll": "^16.1.3"
+    }
+}

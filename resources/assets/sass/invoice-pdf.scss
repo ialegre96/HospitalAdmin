@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 30px;
+    font-size: 14px;
+}
+
+.font-color-gray {
+    color: #7a7a7a;
+}
+
+.main-heading {
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-right {
+    text-align: right;
+    vertical-align: top;
+}
+
+.logo, .hospital-name {
+    margin-bottom: 8px;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.address {
+    margin-top: 60px;
+}
+
+.address tr:first-child td {
+    padding-bottom: 10px;
+}
+
+.items-table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.items-table thead {
+    background: #2f353a;
+    color: #fff;
+}
+
+.items-table td, .items-table th {
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+
+.invoice-footer {
+    margin-top: 15px;
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+
+.number-align {
+    text-align: right !important;
+}

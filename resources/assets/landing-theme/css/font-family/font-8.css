@@ -1,0 +1,12 @@
+/* ------------------------------------------------
+  Project:   Sassaht - SaaS, Startup & WebApp Prebuilt Template
+  Author:    ThemeHt
+
+  NOTE: This is Color customizer stylesheet of template.
+------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}

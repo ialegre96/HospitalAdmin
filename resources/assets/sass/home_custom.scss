@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    @media (min-width: 1200px) {
+        max-width: 1160px;
+    }
+}
+
+//scroll-top
+.scrolltop {
+    background-color: #ff3e55;
+    bottom: 50px;
+}
+
+// Overwrite css
+.section-heading {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+//header-section
+.navbar {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: #000;
+                font-weight: 400;
+                font-size: 15px;
+
+                &:hover {
+                    color: #f33d54;
+                }
+
+                &.active {
+                    color: #f33d54;
+                }
+            }
+
+            .language-icon {
+                color: #000;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//landing page
+.landing-header {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    .header_image {
+        @media (max-width: 768px) {
+            padding-bottom: 80px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .header-text {
+        @media (max-width: 768px) {
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    .welcome-text {
+        font-size: 40px;
+        font-weight: 700;
+        color: #ccc;
+
+        .heading-name {
+            font-size: 100px;
+            line-height: 150px;
+            color: #f33d54;
+
+            @media (max-width: 768px) {
+                font-size: 72px;
+                line-height: 67px;
+            }
+        }
+
+        .heading-text {
+            color: #7a7a7a;
+            font-size: 13px;
+            letter-spacing: .5px;
+            line-height: 18px;
+            text-transform: uppercase;
+            display: block;
+        }
+    }
+}
+
+//HMS features section
+.features {
+    padding-bottom: 60px;
+
+    .features-card {
+        @media (max-width: 768px) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .features-block {
+        i {
+            font-size: 45px;
+        }
+
+        .ambulance {
+            color: #398aed;
+        }
+
+        .qualified-doctor {
+            color: #32e46c;
+        }
+
+        .outdoor-checkup {
+            color: #31d2d0;
+        }
+
+        .service-clock {
+            color: #b346f8;
+        }
+    }
+}
+
+// HMS icons
+.content-icons {
+    i {
+        background-color: #ff3e55;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        font-size: 42px;
+        color: #fff;
+        padding-top: 32px;
+    }
+}
+
+//Backend feature
+#hmsFeatures {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.hms__features {
+    &__block {
+        margin: 30px 0;
+    }
+
+    .hms__features-img {
+        border-radius: 12px;
+        overflow: hidden;
+        transition: .3s all;
+        border: 1px solid #c6d8e0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 2px 5px 20px rgb(0 0 0 / 20%);
+        }
+    }
+}
+
+//FACILITIES section
+#hmsFacilities {
+    ul {
+        list-style-type: none;
+    }
+}
+
+.facility-block-one {
+    .facility-item {
+        position: relative;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        color: #6c757d;
+        font-size: 16px;
+
+        &:before {
+            content: "";
+            background-image: url(../img/tick.png);
+            background-size: contain;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            top: 4px;
+            left: 0;
+        }
+    }
+}
+
+.facility-block-two {
+    .facility-item {
+        position: relative;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        color: #6c757d;
+        font-size: 16px;
+
+        &:before {
+            content: "";
+            background-image: url(../img/tick.png);
+            background-size: contain;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            top: 4px;
+            left: 0;
+        }
+    }
+}
+
+// starting block section
+.start-using-block {
+    background: #ff4057;
+    padding: 120px 0;
+    margin: 50px 0;
+    clip-path: polygon(0 1%, 100% 10%, 100% 100%, 0 90%);
+
+    p {
+        font-weight: 700;
+        line-height: 75px;
+        font-size: 70px;
+        color: #fff;
+
+        @media (max-width: 768px) {
+            font-size: 55px;
+        }
+    }
+
+    .using-block-btn {
+        @media (max-width: 768px) {
+            width: 35% !important;
+        }
+    }
+}
+
+//Footer block section
+.footer-block {
+    margin-bottom: 25px;
+
+    span {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        margin-top: 15px;
+        margin-bottom: 0;
+
+        li {
+            a {
+                text-decoration: none;
+                color: #6c757d;
+                font-size: 15px;
+            }
+        }
+    }
+
+    p {
+        color: #6c757d;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+}
+
+//testimonial section
+.testimonials {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.item {
+    width: 100%;
+
+    .testimonial-item {
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 30px;
+        width: 100%;
+        background: #f9f9f9;
+        padding: 65px 20px;
+
+        .testimonial-content {
+            margin-top: 20px;
+            text-align: center;
+            height: 130px;
+        }
+
+        img {
+            height: 100px !important;
+            width: 100px !important;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: -40px;
+        }
+    }
+}
+
+.owl-carousel {
+    .owl-item {
+        img {
+            height: 100%;
+            width: 80%;
+        }
+    }
+}
+
+//footer section
+.footer {
+    color: #6c757d;
+    padding: 20px;
+    font-size: 15px;
+
+    .footer-links {
+        a {
+            &:hover {
+                color: #ff3e55;
+            }
+        }
+    }
+}
+
+// Cookies section
+.cookie-consent {
+    background-color: #feeaec;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 5px;
+    font-size: 15px;
+
+    button {
+        visibility: visible;
+        animation-delay: .4s;
+        animation-name: bounceIn;
+        animation-duration: .75s;
+        transition: .3s all;
+        background: #ff3e55;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        outline: 0;
+        border-radius: 10px;
+        border: 1px solid;
+        padding: 7px;
+        font-size: 13px;
+    }
+}
+
+
+//Appointment section css
+.appointment-title {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+//Contact-us css
+.iti {
+    display: block !important;
+}
+
+.contact-heading {
+    font-size: 42px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.custom-height {
+    min-height: 100px !important;
+}
+
+//About Us css
+.about-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.About-title {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.about-content {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.hide {
+    display: none;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#error-msg {
+    color: red;
+}
+
+#valid-msg {
+    color: green;
+}

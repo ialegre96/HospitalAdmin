@@ -1,0 +1,220 @@
+/* ------------------------------------------------
+  Project:   Sassaht - SaaS, Startup & WebApp Prebuilt Template
+  Author:    ThemeHt
+
+  NOTE: This is Color customizer stylesheet of template.
+------------------------------------------------ */
+
+/* ------------------------
+    General
+------------------------*/
+::-moz-selection {
+    background: #dc2052;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #dc2052;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #dc2052;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+/* ------------------------
+    Background Color
+------------------------*/
+.theme-bg,
+.btn.btn-theme,
+.nav-link.dropdown-toggle:hover::after,
+.header-2 #header-wrap.fixed-header,
+.owl-carousel .owl-dots .owl-dot:hover span, .owl-carousel .owl-dots .owl-dot.active span,
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover,
+.tab .nav-tabs .nav-link.active, .tab .nav-tabs .nav-link:hover, .tab .nav-tabs.active > a:focus, .tab .nav-tabs > a:hover,
+.scroll-top a,
+.pagination > li.active .page-link, .page-link:hover, .page-link:focus,
+.video-btn .play-btn,
+.left-bdr, .right-bdr,
+.price-table.style-2:hover, .price-table.style-2.active,
+.price-table.style-3:hover, .price-table.style-3.active,
+.featured-item.style-4:hover,
+[data-overlay].theme-overlay:before,
+.widget .widget-tags li a:hover,
+.post-tags li a:hover,
+#sidebar .sidebar-header,
+#sidebar ul li.active > a, #sidebar a[aria-expanded="true"], #sidebar ul li:hover > a {
+    background-color: #dc2052;
+}
+
+.bd-color-1 {
+    stroke: #dc2052;
+}
+
+.bd-color-2 {
+    stroke: #f33c6a;
+}
+
+/* ------------------------
+    Color
+------------------------*/
+a, button, input,
+a:focus, a:hover,
+.text-theme,
+.nav-item.dropdown .dropdown-menu a:hover,
+.navbar-nav .nav-link:hover, .navbar-nav .nav-item .nav-link.active,
+h1 span,
+.breadcrumb-item.active, .breadcrumb-item a:hover,
+.featured-item .featured-icon i,
+.list-icon li i,
+.price-value h2,
+.price-list li i,
+.price-table.style-2 .price-title,
+.post-meta ul li i,
+.post .post-desc h4 a:hover,
+.media-icon li a:hover,
+.scroll-top a:hover, .scroll-top a:focus,
+.step-icon,
+.testimonial .testimonial-caption h5,
+.counter.style-2 span,
+.counter.style-3 span,
+.team-member .team-description h5,
+.job-list-icon i,
+.job-list-info i,
+.accordion .card a[aria-expanded="true"], .accordion .card a:hover,
+.contact-media h5,
+.contact-media i,
+.color-customizer a.opener,
+.widget-title,
+.widget-about h4,
+.widget .widget-categories a span,
+.comment-date,
+.comment-reply a:hover,
+.widget .widget-categories li a:hover,
+.widget .recent-post-desc a:hover,
+.widget-searchbox .search-btn {
+    color: #dc2052;
+}
+
+
+/* ------------------------
+    2nd background Color
+------------------------*/
+.dark-bg .featured-item.style-3:hover,
+.btn-iconic::before,
+.btn::before, .btn::after, .btn span::before, .btn span::after,
+.featured-item.style-3:hover {
+    background-color: #f33c6a;
+}
+
+/* ------------------------
+    2nd Color
+------------------------*/
+.testimonial .testimonial-caption label {
+    color: #f33c6a
+}
+
+/* ------------------------
+    RGB background Color
+------------------------*/
+.featured-item.style-4 .featured-icon::before,
+.title-theme-bg {
+    background: rgba(220, 32, 82, 0.2);
+}
+
+.featured-item.style-4 .featured-icon::after {
+    border-color: rgba(220, 32, 82, 0.050);
+}
+
+.post-meta ul li,
+.job-search .form-control,
+.job-list-time span,
+.text-bg,
+.testimonial.style-1 .testimonial-content p,
+.testimonial.style-2::before {
+    background: rgba(220, 32, 82, 0.1);
+}
+
+.post-categories li {
+    background: rgba(243, 60, 106, 0.1);
+}
+
+
+/* ------------------------
+    Grediant Color
+------------------------*/
+[data-overlay].grediant-overlay:before,
+.grediant-bg,
+.featured-item.style-5 .featured-icon:before,
+.team-link a,
+.post.style-4 .post-image::before,
+.hero-shape1,
+.hero-shape2,
+.hero-shape4,
+.hero-shape5,
+.hero-shape6 {
+    background: rgb(220, 32, 82);
+    background: linear-gradient(58deg, rgba(220, 32, 82, 1) 35%, rgba(243, 60, 106, 1) 100%);
+}
+
+.testimonial.style-3 .testimonial-content {
+    background: rgb(220, 32, 82);
+    background: linear-gradient(180deg, rgba(220, 32, 82, 1) 25%, rgba(243, 60, 106, 1) 100%);
+}
+
+.team-member.style-4 {
+    border-image: linear-gradient(45deg, rgb(220, 32, 82), rgb(243, 60, 106)) 1;
+}
+
+
+/* ------------------------
+    border Color
+------------------------*/
+.round-anim,
+.image-anim::before {
+    border-color: rgba(220, 32, 82, 0.1);
+}
+
+.work-process .arrow .curve {
+    border-color: transparent transparent transparent #dc2052;
+}
+
+.work-process .arrow .point::before, .work-process .arrow .point::after,
+.job-list-icon i,
+.form-inline .form-control {
+    border-color: #f33c6a;
+}
+
+.form-control {
+    border-bottom-color: #f33c6a;
+}
+
+
+/* ------------------------
+    Box Shadow
+------------------------*/
+.price-table.style-4 .price-value h2::before {
+    box-shadow: 5px 5px 8px rgba(220, 32, 82, 3)
+}
+
+
+@media (max-width: 992px) {
+    .navbar-toggler span {
+        background-color: #dc2052;
+    }
+
+    .navbar-nav .nav-item.show .nav-link,
+    .navbar-nav .nav-item.show .dropdown-submenu.show > a {
+        color: #dc2052
+    }
+
+    .header-3 .navbar-nav .nav-link:hover, .header-3 .navbar-nav .nav-item .nav-link.active,
+    .header-3 .navbar-nav .nav-link:hover::before, .header-3 .navbar-nav .nav-item .nav-link.active::before, .header-3 .navbar-nav .nav-link:focus::before {
+        color: #dc2052
+    }
+}

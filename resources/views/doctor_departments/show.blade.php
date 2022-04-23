@@ -1,0 +1,35 @@
+@extends('layouts.app')
+@section('title')
+    {{ __('messages.doctor_department.doctor_department_details') }}
+@endsection
+@section('page_css')
+@endsection
+@section('css')
+    <link rel="stylesheet" href="{{ asset('assets/css/detail-header.css') }}">
+@endsection
+@section('content')
+    <div class="d-flex flex-column flex-lg-row">
+        <div class="flex-lg-row-fluid mb-10 mb-lg-0 me-lg-7 me-xl-10">
+            <div class="row">
+                <div class="col-12">
+                    @include('flash::message')
+                </div>
+            </div>
+            <div class="p-12">
+                @include('doctor_departments.show_fields')
+            </div>
+        </div>
+    </div>
+    @include('doctor_departments.edit_modal')
+@endsection
+@section('page_scripts')
+    <script src="{{ mix('assets/js/custom/custom-datatable.js') }}"></script>
+    <script src="{{ mix('assets/js/doctors_departments/doctor_departments_list.js') }}"></script>
+@endsection
+@section('scripts')
+    <script>
+        let doctorDepartmentUrl = "{{url('doctor-departments')}}";
+    </script>
+    <script src="{{ mix('assets/js/doctors_departments/doctors_departments-details-edit.js') }}"></script>
+    <script src="{{ mix('assets/js/custom/delete.js') }}"></script>
+@endsection

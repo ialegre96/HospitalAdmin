@@ -1,0 +1,64 @@
+@import "variables";
+
+$border-color: rgba(#CCD5DB, 1);
+
+.timeline-spacer {
+    margin-top: 2.5em;
+}
+
+.timeline-item {
+    padding: 3em 2em 2em;
+    position: relative;
+    color: rgba(black, .7);
+    border-left: 4px solid $border-color;
+
+    p {
+        font-size: 1rem;
+    }
+
+    &::before {
+        content: attr(date-is);
+        position: absolute;
+        left: 2em;
+        top: 1em;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: .900rem;
+        color: #9a9a9a;
+    }
+
+    &::after {
+        width: 20px;
+        height: 20px;
+        display: block;
+        top: 1em;
+        position: absolute;
+        left: -12px;
+        border-radius: 10px;
+        content: '';
+        border: 4px solid #FF6B6B;
+        background: #FF6B6B;
+        transition: background .2s ease-in;
+    }
+
+    &:last-child {
+        border-image: linear-gradient(
+                        to bottom,
+                        $border-color 60%,
+                        rgba($border-color, 0)) 1 100%;
+    }
+
+    &:hover {
+        &::after {
+            background: #ffffff;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .bottom-sm {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
